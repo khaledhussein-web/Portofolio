@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Color sample photo 5</title>
+  <desc id="desc">A colorful circular textile-style pattern with a strong woven overlay used as a temporary carousel image.</desc>
+  <defs>
+    <filter id="woven">
+      <feTurbulence type="turbulence" baseFrequency="0.12 0.8" numOctaves="2"/>
+      <feDisplacementMap in="SourceGraphic" scale="7"/>
+    </filter>
+    <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M0 5h22M0 16h22M5 0v22M16 0v22" stroke="#475569" stroke-opacity=".45" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="#a2adb5"/>
+  <g filter="url(#woven)" transform="translate(-85 -75)">
+    <circle cx="150" cy="130" r="124" fill="#64c837" stroke="#687680" stroke-width="30"/>
+    <circle cx="430" cy="130" r="124" fill="#f4d43a" stroke="#687680" stroke-width="30"/>
+    <circle cx="710" cy="130" r="124" fill="#f07d43" stroke="#687680" stroke-width="30"/>
+    <circle cx="990" cy="130" r="124" fill="#e648ab" stroke="#687680" stroke-width="30"/>
+    <circle cx="150" cy="375" r="124" fill="#eeb52b" stroke="#687680" stroke-width="30"/>
+    <circle cx="430" cy="375" r="124" fill="#f1c630" stroke="#687680" stroke-width="30"/>
+    <circle cx="710" cy="375" r="124" fill="#e86946" stroke="#687680" stroke-width="30"/>
+    <circle cx="990" cy="375" r="124" fill="#dd40a6" stroke="#687680" stroke-width="30"/>
+    <circle cx="150" cy="620" r="124" fill="#eaa12a" stroke="#687680" stroke-width="30"/>
+    <circle cx="430" cy="620" r="124" fill="#dc4b2c" stroke="#687680" stroke-width="30"/>
+    <circle cx="710" cy="620" r="124" fill="#e63b58" stroke="#687680" stroke-width="30"/>
+    <circle cx="990" cy="620" r="124" fill="#e734a1" stroke="#687680" stroke-width="30"/>
+  </g>
+  <rect width="1200" height="675" fill="url(#grid)" opacity=".8"/>
+</svg>

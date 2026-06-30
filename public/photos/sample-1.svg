@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Color sample photo 1</title>
+  <desc id="desc">A colorful circular textile-style pattern used as a temporary carousel image.</desc>
+  <defs>
+    <linearGradient id="metal" x1="0" x2="1">
+      <stop offset="0" stop-color="#9aa6af"/>
+      <stop offset="0.5" stop-color="#d8dee3"/>
+      <stop offset="1" stop-color="#697883"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend mode="multiply" in2="SourceGraphic"/>
+    </filter>
+    <pattern id="mesh" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M0 4h18M0 13h18M4 0v18M13 0v18" stroke="#1f2937" stroke-opacity=".22" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="#8d9aa3"/>
+  <g filter="url(#grain)">
+    <rect width="1200" height="675" fill="url(#metal)"/>
+    <g transform="translate(-80 -70)">
+      <g>
+        <circle cx="160" cy="130" r="116" fill="#59c838"/><circle cx="160" cy="130" r="132" fill="none" stroke="#5d6872" stroke-width="28"/>
+        <circle cx="440" cy="130" r="116" fill="#f2ca20"/><circle cx="440" cy="130" r="132" fill="none" stroke="#5d6872" stroke-width="28"/>
+        <circle cx="720" cy="130" r="116" fill="#ee7036"/><circle cx="720" cy="130" r="132" fill="none" stroke="#5d6872" stroke-width="28"/>
+        <circle cx="1000" cy="130" r="116" fill="#e93ca3"/><circle cx="1000" cy="130" r="132" fill="none" stroke="#5d6872" stroke-width="28"/>
+      </g>
+      <g transform="translate(0 230)">
+        <circle cx="160" cy="130" r="116" fill="#e7aa22"/><circle cx="160" cy="130" r="132" fill="none" stroke="#5d6872" stroke-width="28"/>
+        <circle cx="440" cy="130" r="116" fill="#f1d326"/><circle cx="440" cy="130" r="132" fill="none" stroke="#5d6872" stroke-width="28"/>
+        <circle cx="720" cy="130" r="116" fill="#ef603d"/><circle cx="720" cy="130" r="132" fill="none" stroke="#5d6872" stroke-width="28"/>
+        <circle cx="1000" cy="130" r="116" fill="#df4bad"/><circle cx="1000" cy="130" r="132" fill="none" stroke="#5d6872" stroke-width="28"/>
+      </g>
+      <g transform="translate(0 460)">
+        <circle cx="160" cy="130" r="116" fill="#f1b52b"/><circle cx="160" cy="130" r="132" fill="none" stroke="#5d6872" stroke-width="28"/>
+        <circle cx="440" cy="130" r="116" fill="#e54d2f"/><circle cx="440" cy="130" r="132" fill="none" stroke="#5d6872" stroke-width="28"/>
+        <circle cx="720" cy="130" r="116" fill="#ec305f"/><circle cx="720" cy="130" r="132" fill="none" stroke="#5d6872" stroke-width="28"/>
+        <circle cx="1000" cy="130" r="116" fill="#2fb24a"/><circle cx="1000" cy="130" r="132" fill="none" stroke="#5d6872" stroke-width="28"/>
+      </g>
+    </g>
+    <rect width="1200" height="675" fill="url(#mesh)" opacity=".55"/>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Color sample photo 2</title>
+  <desc id="desc">A softer colorful circular textile-style pattern used as a temporary carousel image.</desc>
+  <defs>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+    <pattern id="cloth" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 3h12M0 9h12M3 0v12M9 0v12" stroke="#475569" stroke-opacity=".28" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="#aab2b8"/>
+  <g filter="url(#soft)">
+    <g transform="translate(-120 -110)">
+      <circle cx="180" cy="150" r="145" fill="#42bd3d" stroke="#66727c" stroke-width="34"/>
+      <circle cx="500" cy="150" r="145" fill="#f3d552" stroke="#66727c" stroke-width="34"/>
+      <circle cx="820" cy="150" r="145" fill="#ed815f" stroke="#66727c" stroke-width="34"/>
+      <circle cx="1140" cy="150" r="145" fill="#db4eb8" stroke="#66727c" stroke-width="34"/>
+      <circle cx="180" cy="450" r="145" fill="#67c94e" stroke="#66727c" stroke-width="34"/>
+      <circle cx="500" cy="450" r="145" fill="#efc247" stroke="#66727c" stroke-width="34"/>
+      <circle cx="820" cy="450" r="145" fill="#ee765e" stroke="#66727c" stroke-width="34"/>
+      <circle cx="1140" cy="450" r="145" fill="#d75bad" stroke="#66727c" stroke-width="34"/>
+      <circle cx="180" cy="750" r="145" fill="#e0a83c" stroke="#66727c" stroke-width="34"/>
+      <circle cx="500" cy="750" r="145" fill="#d9473c" stroke="#66727c" stroke-width="34"/>
+      <circle cx="820" cy="750" r="145" fill="#e73d95" stroke="#66727c" stroke-width="34"/>
+      <circle cx="1140" cy="750" r="145" fill="#2fbd4b" stroke="#66727c" stroke-width="34"/>
+    </g>
+  </g>
+  <rect width="1200" height="675" fill="url(#cloth)" opacity=".72"/>
+</svg>

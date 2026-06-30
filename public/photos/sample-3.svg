@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Color sample photo 3</title>
+  <desc id="desc">A sharp colorful circular textile-style pattern used as a temporary carousel image.</desc>
+  <defs>
+    <radialGradient id="rim" cx=".35" cy=".3" r=".75">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset=".45" stop-color="#aab4bd"/>
+      <stop offset="1" stop-color="#48545f"/>
+    </radialGradient>
+    <pattern id="threads" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M0 2h10M0 7h10M2 0v10M7 0v10" stroke="#0f172a" stroke-opacity=".24" stroke-width=".8"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="#8f9ca5"/>
+  <g transform="translate(-40 -80)">
+    <g>
+      <circle cx="110" cy="130" r="128" fill="url(#rim)"/><circle cx="110" cy="130" r="104" fill="#34b233"/>
+      <circle cx="390" cy="130" r="128" fill="url(#rim)"/><circle cx="390" cy="130" r="104" fill="#e8d022"/>
+      <circle cx="670" cy="130" r="128" fill="url(#rim)"/><circle cx="670" cy="130" r="104" fill="#ee8b35"/>
+      <circle cx="950" cy="130" r="128" fill="url(#rim)"/><circle cx="950" cy="130" r="104" fill="#df4bae"/>
+      <circle cx="1230" cy="130" r="128" fill="url(#rim)"/><circle cx="1230" cy="130" r="104" fill="#2bb246"/>
+    </g>
+    <g transform="translate(0 240)">
+      <circle cx="110" cy="130" r="128" fill="url(#rim)"/><circle cx="110" cy="130" r="104" fill="#4ec448"/>
+      <circle cx="390" cy="130" r="128" fill="url(#rim)"/><circle cx="390" cy="130" r="104" fill="#e9ba25"/>
+      <circle cx="670" cy="130" r="128" fill="url(#rim)"/><circle cx="670" cy="130" r="104" fill="#e45c33"/>
+      <circle cx="950" cy="130" r="128" fill="url(#rim)"/><circle cx="950" cy="130" r="104" fill="#e1349a"/>
+      <circle cx="1230" cy="130" r="128" fill="url(#rim)"/><circle cx="1230" cy="130" r="104" fill="#35b24c"/>
+    </g>
+    <g transform="translate(0 480)">
+      <circle cx="110" cy="130" r="128" fill="url(#rim)"/><circle cx="110" cy="130" r="104" fill="#e99f2b"/>
+      <circle cx="390" cy="130" r="128" fill="url(#rim)"/><circle cx="390" cy="130" r="104" fill="#e0502f"/>
+      <circle cx="670" cy="130" r="128" fill="url(#rim)"/><circle cx="670" cy="130" r="104" fill="#dd2c55"/>
+      <circle cx="950" cy="130" r="128" fill="url(#rim)"/><circle cx="950" cy="130" r="104" fill="#ef36a2"/>
+      <circle cx="1230" cy="130" r="128" fill="url(#rim)"/><circle cx="1230" cy="130" r="104" fill="#34b233"/>
+    </g>
+  </g>
+  <rect width="1200" height="675" fill="url(#threads)" opacity=".82"/>
+</svg>
