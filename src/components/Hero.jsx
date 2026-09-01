@@ -1,13 +1,15 @@
-import { motion } from 'framer-motion'
-import { ArrowDown, ArrowUpRight, Download, Github, Mail, MapPin } from 'lucide-react'
+import { motion, useReducedMotion } from 'framer-motion'
+import { ArrowDown, ArrowUpRight, Github, Mail, MapPin } from 'lucide-react'
 
 const stats = [
-  ['4+', 'Production projects'],
+  ['5+', 'Production projects'],
   ['3', 'Industry internships'],
-  ['2026', 'Graduation year'],
+  ['8', 'Skill areas'],
 ]
 
 export default function Hero() {
+  const reduceMotion = useReducedMotion()
+
   return (
     <section id="home" className="relative flex min-h-screen items-center overflow-hidden pt-20">
       <div className="absolute inset-0 -z-20 bg-white dark:bg-ink" />
@@ -61,7 +63,7 @@ export default function Hero() {
             transition={{ delay: 0.26, duration: 0.65 }}
             className="mt-6 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-400"
           >
-            Computer Science for Business student building real-world web, mobile, AI, and DevOps projects with a focus on thoughtful, scalable engineering.
+            Full-stack developer building real-world web, mobile, AI, and DevOps projects with a focus on thoughtful, scalable engineering.
           </motion.p>
 
           <motion.div
@@ -72,9 +74,6 @@ export default function Hero() {
           >
             <a href="#projects" className="button-primary">
               View projects <ArrowDown size={17} />
-            </a>
-            <a href="/Khaled-Hussein-CV.pdf" download="Khaled-Hussein-CV.pdf" className="button-secondary">
-              <Download size={17} /> Download CV
             </a>
             <a href="#contact" className="button-ghost">
               Contact me
@@ -103,8 +102,30 @@ export default function Hero() {
           transition={{ delay: 0.25, duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
           className="relative mx-auto w-full max-w-lg"
         >
+          <motion.div
+            aria-hidden="true"
+            className="absolute inset-8 rounded-[2.75rem] border border-dashed border-teal-500/20 dark:border-cyan-400/15"
+            animate={reduceMotion ? undefined : { rotate: 360 }}
+            transition={{ duration: 32, repeat: Infinity, ease: 'linear' }}
+          />
           <div className="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-br from-cyan-400/15 to-blue-600/10 blur-2xl" />
-          <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white/85 p-6 shadow-2xl shadow-slate-900/10 backdrop-blur dark:border-white/10 dark:bg-slate-900/70 dark:shadow-black/30">
+          <motion.div
+            aria-hidden="true"
+            className="absolute -right-5 top-16 z-20 hidden items-center gap-2 rounded-full border border-slate-200 bg-white/90 px-4 py-2 text-xs font-bold text-slate-700 shadow-xl backdrop-blur sm:flex dark:border-white/10 dark:bg-slate-900/90 dark:text-cyan-300"
+            animate={reduceMotion ? undefined : { y: [0, -10, 0], rotate: [0, 1.5, 0] }}
+            transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut' }}
+          >
+            <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_12px_rgba(52,211,153,.8)]" /> API ready
+          </motion.div>
+          <motion.div
+            aria-hidden="true"
+            className="absolute -left-7 bottom-20 z-20 hidden rounded-full border border-slate-200 bg-white/90 px-4 py-2 text-xs font-bold text-slate-700 shadow-xl backdrop-blur sm:block dark:border-white/10 dark:bg-slate-900/90 dark:text-violet-300"
+            animate={reduceMotion ? undefined : { y: [0, 9, 0], rotate: [0, -2, 0] }}
+            transition={{ duration: 5.2, repeat: Infinity, ease: 'easeInOut', delay: 0.6 }}
+          >
+            AI integrated ✦
+          </motion.div>
+          <div className="surface-shine relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white/85 p-6 shadow-2xl shadow-slate-900/10 backdrop-blur dark:border-white/10 dark:bg-slate-900/70 dark:shadow-black/30">
             <div className="mb-8 flex items-center gap-2 border-b border-slate-200 pb-5 dark:border-white/10">
               <span className="h-3 w-3 rounded-full bg-rose-400" />
               <span className="h-3 w-3 rounded-full bg-amber-400" />
@@ -143,10 +164,10 @@ export default function Hero() {
           className="grid grid-cols-3 gap-4 border-t border-slate-200 pt-8 lg:col-span-2 dark:border-white/10"
         >
           {stats.map(([value, label]) => (
-            <div key={label}>
+            <motion.div key={label} whileHover={{ y: -4 }} transition={{ type: 'spring', stiffness: 350, damping: 22 }}>
               <p className="font-display text-2xl font-bold text-slate-950 sm:text-3xl dark:text-white">{value}</p>
               <p className="mt-1 text-xs text-slate-500 sm:text-sm dark:text-slate-400">{label}</p>
-            </div>
+            </motion.div>
           ))}
         </motion.div>
       </div>

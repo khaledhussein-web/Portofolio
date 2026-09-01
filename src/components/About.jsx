@@ -33,8 +33,8 @@ export default function About() {
           <div className="grid gap-4 sm:grid-cols-2">
             {focusAreas.map(({ icon: Icon, title, text }, index) => (
               <Reveal key={title} delay={index * 0.06}>
-                <div className="card h-full p-6">
-                  <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-teal-500/10 text-teal-700 dark:text-cyan-400">
+                <div className="card surface-shine group h-full p-6 transition-transform duration-500 hover:-translate-y-1.5">
+                  <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-teal-500/10 text-teal-700 transition-transform duration-500 group-hover:-rotate-6 group-hover:scale-110 dark:text-cyan-400">
                     <Icon size={21} />
                   </div>
                   <h3 className="font-display text-lg font-semibold text-slate-950 dark:text-white">{title}</h3>

@@ -41,8 +41,8 @@ export default function Skills() {
             const Icon = icons[group.icon]
             return (
               <Reveal key={group.title} delay={(index % 4) * 0.05}>
-                <article className="card h-full p-6">
-                  <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-teal-500/10 text-teal-700 dark:text-cyan-400">
+                <article className="card surface-shine group h-full p-6 transition-transform duration-500 hover:-translate-y-1.5">
+                  <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-teal-500/10 text-teal-700 transition-transform duration-500 group-hover:-rotate-6 group-hover:scale-110 dark:text-cyan-400">
                     <Icon size={21} />
                   </div>
                   <h3 className="font-display text-lg font-bold text-slate-950 dark:text-white">{group.title}</h3>
@@ -58,7 +58,7 @@ export default function Skills() {
         </div>
 
         <Reveal className="mt-6">
-          <div className="card flex flex-col gap-6 p-6 sm:flex-row sm:items-center sm:justify-between">
+          <div className="card surface-shine flex flex-col gap-6 p-6 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-center gap-4">
               <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-teal-500/10 text-teal-700 dark:text-cyan-400">
                 <LanguagesIcon size={21} />

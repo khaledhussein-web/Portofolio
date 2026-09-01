@@ -56,6 +56,24 @@ export const projects = [
     number: '03',
   },
   {
+    id: 'cedare',
+    title: 'Cedaré',
+    subtitle: 'Premium Handmade Lifestyle E-Commerce Website',
+    date: '2026',
+    description:
+      'A modern e-commerce website for a premium Lebanese-inspired handmade lifestyle brand, presenting curated bags, accessories, home décor, and gifts through a clean, minimal Mediterranean-inspired interface.',
+    technologies: ['E-commerce', 'Responsive Design', 'UI/UX', 'Product Catalog', 'Scalable Architecture'],
+    features: [
+      'Curated lifestyle collections',
+      'Elegant responsive shopping experience',
+      'Mediterranean-inspired visual design',
+      'Flexible support for new product categories',
+    ],
+    category: ['E-commerce'],
+    accent: 'from-rose-300 to-amber-500',
+    number: '04',
+  },
+  {
     id: 'devops',
     title: 'DevOps Pipeline',
     subtitle: 'Automation Project',
@@ -71,7 +89,7 @@ export const projects = [
     ],
     category: ['DevOps'],
     accent: 'from-sky-400 to-blue-600',
-    number: '04',
+    number: '05',
   },
 ]
 

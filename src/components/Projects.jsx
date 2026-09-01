@@ -53,7 +53,7 @@ export default function Projects() {
                 exit={{ opacity: 0, scale: 0.96 }}
                 transition={{ duration: 0.3 }}
                 whileHover={{ y: -6 }}
-                className="card group relative overflow-hidden p-7 sm:p-8"
+                className="card surface-shine group relative overflow-hidden p-7 sm:p-8"
               >
                 <div className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${project.accent}`} />
                 <div className="flex items-start justify-between gap-6">
